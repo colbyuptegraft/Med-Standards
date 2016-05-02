@@ -36,7 +36,7 @@ class AFOxConvVC: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
         let _: UIScrollViewKeyboardDismissMode
         self.scrollerView.keyboardDismissMode = .Interactive
         
-        let infoButton = UIBarButtonItem(image: infoIcon, style: .Plain, target: self, action: "segue")
+        let infoButton = UIBarButtonItem(image: infoIcon, style: .Plain, target: self, action: #selector(AFOxConvVC.segue))
         self.navigationItem.setRightBarButtonItem(infoButton, animated: false)
     }
     

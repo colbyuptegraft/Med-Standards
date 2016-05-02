@@ -21,9 +21,9 @@ class AFOtherAFIWebviewVC: UIViewController, UIWebViewDelegate {
         
         aF.link = "PDFs_AirForce/Other_AFIs/"
         
-        let reloadButton = UIBarButtonItem(image: redoIcon, style: .Plain, target: self, action: "webViewLoad")
-        let iBooksButton:UIBarButtonItem = UIBarButtonItem(image: downloadIcon, style: .Plain, target: self, action: "iBooksLaunch")
-        let backButton = UIBarButtonItem(image: backArrow, style: .Plain, target: self, action: "goBack")
+        let reloadButton = UIBarButtonItem(image: redoIcon, style: .Plain, target: self, action: #selector(AFOtherAFIWebviewVC.webViewLoad))
+        let iBooksButton:UIBarButtonItem = UIBarButtonItem(image: downloadIcon, style: .Plain, target: self, action: #selector(AFOtherAFIWebviewVC.iBooksLaunch))
+        let backButton = UIBarButtonItem(image: backArrow, style: .Plain, target: self, action: #selector(AFOtherAFIWebviewVC.goBack))
         self.navigationItem.setRightBarButtonItems([backButton, reloadButton, iBooksButton], animated: false)
 
         aFWebview.scalesPageToFit = true

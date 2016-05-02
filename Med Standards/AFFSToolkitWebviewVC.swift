@@ -22,10 +22,10 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
         
         aF.link = "PDFs_AirForce/Toolkit/"
         
-        let reloadButton = UIBarButtonItem(image: redoIcon, style: .Plain, target: self, action: "webViewLoad")
-        let iBooksButton:UIBarButtonItem = UIBarButtonItem(image: downloadIcon, style: .Plain, target: self, action: "iBooksLaunch")
-        let backButton = UIBarButtonItem(image: backArrow, style: .Plain, target: self, action: "goBack")
-        let forwardButton = UIBarButtonItem(image: forwardArrow, style: .Plain, target: self, action: "goForward")
+        let reloadButton = UIBarButtonItem(image: redoIcon, style: .Plain, target: self, action: #selector(AFFSToolkitWebviewVC.webViewLoad))
+        let iBooksButton:UIBarButtonItem = UIBarButtonItem(image: downloadIcon, style: .Plain, target: self, action: #selector(AFFSToolkitWebviewVC.iBooksLaunch))
+        let backButton = UIBarButtonItem(image: backArrow, style: .Plain, target: self, action: #selector(AFFSToolkitWebviewVC.goBack))
+        let forwardButton = UIBarButtonItem(image: forwardArrow, style: .Plain, target: self, action: #selector(AFFSToolkitWebviewVC.goForward))
         
         if aF.selection == aF.pracGuidTitle {
             self.navigationItem.setRightBarButtonItems([forwardButton, backButton, reloadButton], animated: false)

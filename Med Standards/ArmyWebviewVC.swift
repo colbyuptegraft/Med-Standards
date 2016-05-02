@@ -21,9 +21,9 @@ class ArmyWebviewVC: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         army.link = "PDFs_Army/"
         
-        let reloadButton = UIBarButtonItem(image: redoIcon, style: .Plain, target: self, action: "webViewLoad")
-        let iBooksButton:UIBarButtonItem = UIBarButtonItem(image: downloadIcon, style: .Plain, target: self, action: "iBooksLaunch")
-        let backButton = UIBarButtonItem(image: backArrow, style: .Plain, target: self, action: "goBack")
+        let reloadButton = UIBarButtonItem(image: redoIcon, style: .Plain, target: self, action: #selector(ArmyWebviewVC.webViewLoad))
+        let iBooksButton:UIBarButtonItem = UIBarButtonItem(image: downloadIcon, style: .Plain, target: self, action: #selector(ArmyWebviewVC.iBooksLaunch))
+        let backButton = UIBarButtonItem(image: backArrow, style: .Plain, target: self, action: #selector(ArmyWebviewVC.goBack))
         self.navigationItem.setRightBarButtonItems([backButton, reloadButton, iBooksButton], animated: false)
 
         armyWebview.scalesPageToFit = true
