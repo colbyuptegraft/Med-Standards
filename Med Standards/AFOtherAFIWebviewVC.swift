@@ -172,12 +172,6 @@ class AFOtherAFIWebviewVC: UIViewController, UIWebViewDelegate {
             let path = NSBundle.mainBundle().URLForResource("pdfjs/web/AFafecdp1", withExtension: "html")
             let request = NSURLRequest(URL: path!)
             aFWebview?.loadRequest(request)
-        } else if aF.selection == aF.afecdp2Title {
-            self.title = aF.afecdp2Title
-            aF.link += aF.afecdp2PDF
-            let path = NSBundle.mainBundle().URLForResource("pdfjs/web/AFafecdp2", withExtension: "html")
-            let request = NSURLRequest(URL: path!)
-            aFWebview?.loadRequest(request)
         } else if aF.selection == aF.afocdTitle {
             self.title = aF.afocdTitle
             aF.link += aF.afocdPDF
