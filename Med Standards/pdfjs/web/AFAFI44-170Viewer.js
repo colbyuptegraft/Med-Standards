@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 44-170 Preventive Health Assessment (30 Jan 2014).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 44-170 Preventive Health Assessment (19 Jan 2016).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

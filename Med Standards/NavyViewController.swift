@@ -13,12 +13,12 @@ struct navy {
     static var link:String = ""
     
     static let waiverGuideTitle = "Navy Waiver Guide"
-    static let waiverGuideDetail = "U.S. Navy Aeromedical Reference & Waiver Guide (29 Jan 2016)"
-    static let waiverGuidePDF = "Navy Aeromedical Reference and Waiver Guide (29 Jan 2016)"
+    static let waiverGuideDetail = "U.S. Navy Aeromedical Reference & Waiver Guide (19 Apr 2016)"
+    static let waiverGuidePDF = "Navy Aeromedical Reference & Waiver Guide (19 Apr 2016)"
 
     static let usnManmedTitle = "Navy ManMed Chapter 15"
-    static let usnManmedDetail = "Physical Exams & Standards (12 Aug 2005 + 8 Dec 2015 Updates)"
-    static let usnManmedPDF = "USN ManMed Chapter 15 Physical Exams & Standards for Enlistment, Commission, & Special Duty (12 Aug 2005 + 8 Dec 2015 Updates)"
+    static let usnManmedDetail = "Physical Exams & Standards (1 Feb 2016)"
+    static let usnManmedPDF = "USN ManMed Chapter 15 Physical Exams & Standards for Enlistment, Commission, & Special Duty (1 Feb 2016)"
 
 }
 
