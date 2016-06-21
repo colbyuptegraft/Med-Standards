@@ -37,8 +37,8 @@ struct aF {
     static let msdPDF = "AF Medical Standards Directory (02 Feb 2016)"
     
     static let wgTitle = "Waiver Guide"
-    static let wgDetail = "Air Force Waiver Guide (13 Apr 2016)"
-    static let wgPDF = "AF Waiver Guide (13 Apr 2016)"
+    static let wgDetail = "Air Force Waiver Guide (20 Jun 2016)"
+    static let wgPDF = "AF Waiver Guide (20 Jun 2016)"
     
     static let fsToolkitTitle = "Flight Surgeon Toolkit"
     static let fsToolkitDetail = "Useful Flight Medicine Resources"
