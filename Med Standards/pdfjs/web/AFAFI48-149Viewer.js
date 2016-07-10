@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 48-149 Flight & Operational Medicine Program (12 Nov 2014).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 48-149 Flight & Operational Medicine Program (18 Dec 2015).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

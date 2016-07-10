@@ -125,8 +125,8 @@ struct aF {
     static let afi48145PDF = "AFI 48-145 Occupational & Environmental Health Program (22 Jul 2014 + 27 Aug 2015 Updates)"
     
     static let afi48149Title = "AFI 48-149"
-    static let afi48149Detail = "Flight & Operational Medicine Program (FOMP) (12 Nov 2014)"
-    static let afi48149PDF = "AFI 48-149 Flight & Operational Medicine Program (12 Nov 2014)"
+    static let afi48149Detail = "Flight & Operational Medicine Program (FOMP) (18 Dec 2015)"
+    static let afi48149PDF = "AFI 48-149 Flight & Operational Medicine Program (18 Dec 2015)"
     
     static let afi91202Title = "AFI 91-202"
     static let afi91202Detail = "The US Air Force Mishap Prevention Program (16 Feb 2016)"
@@ -153,8 +153,8 @@ struct aF {
     static let afman48147PDF = "AFMAN 48-147_IP Tri-Service Food Code (30 Apr 2014)"
     
     static let afman91223Title = "AFMAN 91-223"
-    static let afman91223Detail = "Aviation Safety Investigations & Reports (16 May 2013)"
-    static let afman91223PDF = "AFMAN 91-223 Aviation Safety Investigations & Reports (16 May 2013).pdf"
+    static let afman91223Detail = "Aviation Safety Investigations & Reports (8 Jun 2016)"
+    static let afman91223PDF = "AFMAN 91-223 Aviation Safety Investigations & Reports (8 Jun 2016).pdf"
     
     static let afocdTitle = "AFOCD"
     static let afocdDetail = "Air Force Officer Classification Directory (30 Apr 2016)"
