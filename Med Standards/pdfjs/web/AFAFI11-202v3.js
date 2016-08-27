@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 11-202V3 General Flight Rules (07 Nov 2014).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 11-202V3 General Flight Rules (10 Aug 2016).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

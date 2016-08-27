@@ -37,8 +37,8 @@ struct aF {
     static let msdPDF = "AF Medical Standards Directory (22 Jun 2016)"
     
     static let wgTitle = "Waiver Guide"
-    static let wgDetail = "Air Force Waiver Guide (20 Jun 2016)"
-    static let wgPDF = "AF Waiver Guide (20 Jun 2016)"
+    static let wgDetail = "Air Force Waiver Guide (8 Aug 2016)"
+    static let wgPDF = "AF Waiver Guide (8 Aug 2016)"
     
     static let fsToolkitTitle = "Flight Surgeon Toolkit"
     static let fsToolkitDetail = "Useful Flight Medicine Resources"
@@ -65,8 +65,8 @@ struct aF {
     static let afi11202v2PDF = "AFI 11-202V2 Aircrew Standardization-Evaluation Program (13 Sep 2010)"
     
     static let afi11202v3Title = "AFI 11-202 v3"
-    static let afi11202v3Detail = "General Flight Rules (07 Nov 2014)"
-    static let afi11202v3PDF = "AFI 11-202V3 General Flight Rules (07 Nov 2014)"
+    static let afi11202v3Detail = "General Flight Rules (10 Aug 2016)"
+    static let afi11202v3PDF = "AFI 11-202V3 General Flight Rules (10 Aug 2016)"
     
     static let afi11301v1Title = "AFI 11-301 v1"
     static let afi11301v1Detail = "Aircrew Flight Equipment (AFE) Program (25 Feb 2009)"
