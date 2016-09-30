@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_Army/AR 40-501 Standards of Medical Fitness (04 Aug 2011).pdf';
+var DEFAULT_URL = '../../PDFs_Army/AR 40-501 Standards of Medical Fitness (11 Aug 2015).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

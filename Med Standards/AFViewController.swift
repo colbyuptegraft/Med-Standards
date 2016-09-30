@@ -17,12 +17,12 @@ struct aF {
     static let dlcPDF = "AFI 10-203 Duty Limiting Conditions (20 Nov 2014)"
     
     static let mesTitle = "AFI 48-123"
-    static let mesDetail = "Medical Examinations & Standards (05 Nov 2013 + 27 Aug 2015 Updates)"
-    static let mesPDF = "AFI 48-123 Medical Examinations & Standards (05 Nov 2013 + 27 Aug 2015 Updates)"
+    static let mesDetail = "Medical Examinations & Standards (19 Sep 2016)"
+    static let mesPDF = "AFI 48-123 Medical Examinations & Standards (19 Sep 2016)"
     
     static let medsTitle = "Approved Med List"
-    static let medsDetail = "Official Air Force Aerospace Medicine Approved Medications (15 Mar 2016)"
-    static let medsPDF = "AF Approved Med List (15 Mar 2016)"
+    static let medsDetail = "Official Air Force Aerospace Medicine Approved Medications (11 Sep 2016)"
+    static let medsPDF = "AF Approved Med List (11 Sep 2016)"
     
     static let otcMedsTitle = "OTC Approved Med List"
     static let otcMedsDetail = "Over-the-Counter Medications Not Requiring Flight Surgeon Approval (09 Jan 2014)"
@@ -33,8 +33,8 @@ struct aF {
     static let modMedsPDF = "AF Missile Operator Approved Med List (11 Sep 2015)"
     
     static let msdTitle = "MSD"
-    static let msdDetail = "Medical Standards Directory (22 Jun 2016)"
-    static let msdPDF = "AF Medical Standards Directory (22 Jun 2016)"
+    static let msdDetail = "Medical Standards Directory (11 Sep 2016)"
+    static let msdPDF = "AF Medical Standards Directory (11 Sep 2016)"
     
     static let wgTitle = "Waiver Guide"
     static let wgDetail = "Air Force Waiver Guide (8 Aug 2016)"
@@ -81,8 +81,8 @@ struct aF {
     static let afi11301v4PDF = "AFI 11-301V4 Aircrew Laser Eye Program (17 Feb 2010)"
     
     static let afi11401Title = "AFI 11-401"
-    static let afi11401Detail = "Aviation Management (10 Dec 2010)"
-    static let afi11401PDF = "AFI 11-401 Aviation Management (10 Dec 2010)"
+    static let afi11401Detail = "Aviation Management (18 Mar 2016)"
+    static let afi11401PDF = "AFI 11-401 Aviation Management (18 Mar 2016)"
     
     static let afi11402Title = "AFI 11-402"
     static let afi11402Detail = "Aviation & Parachutist Service, Aeronautical Ratings & Aviation Badges (05 Feb 2013)"
