@@ -38,27 +38,27 @@ class ArmyViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return armyDocArray.count
         
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle,  reuseIdentifier: "Cell")
+        let cell = UITableViewCell(style: UITableViewCellStyle.subtitle,  reuseIdentifier: "Cell")
         
         let titleFont:UIFont? = UIFont(name: "Helvetica", size: 14.0)
         let detailFont:UIFont? = UIFont(name: "Helvetica", size: 12.0)
         
-        let detailText:NSMutableAttributedString = NSMutableAttributedString(string: "\n" + (armyDocDetailArray[indexPath.row] as! String), attributes: (NSDictionary(object: detailFont!, forKey: NSFontAttributeName) as! [String: AnyObject]))
-        detailText.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSMakeRange(0, detailText.length))
+        let detailText:NSMutableAttributedString = NSMutableAttributedString(string: "\n" + (armyDocDetailArray[(indexPath as NSIndexPath).row] as! String), attributes: (NSDictionary(object: detailFont!, forKey: NSFontAttributeName as NSCopying) as! [String: AnyObject]))
+        detailText.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGray, range: NSMakeRange(0, detailText.length))
         
-        let title = NSMutableAttributedString(string: armyDocArray[indexPath.row] as! String, attributes: (NSDictionary(object: titleFont!, forKey: NSFontAttributeName) as! [String: AnyObject]))
+        let title = NSMutableAttributedString(string: armyDocArray[(indexPath as NSIndexPath).row] as! String, attributes: (NSDictionary(object: titleFont!, forKey: NSFontAttributeName as NSCopying) as! [String: AnyObject]))
         
-        title.appendAttributedString(detailText)
+        title.append(detailText)
         
         cell.textLabel?.attributedText = title
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         cell.textLabel?.numberOfLines = 0
         
         
@@ -66,13 +66,13 @@ class ArmyViewController: UITableViewController {
     }
     
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         army.selection = ""
         
-        army.selection = armyDocArray[indexPath.row] as! String
+        army.selection = armyDocArray[(indexPath as NSIndexPath).row] as! String
         
-        performSegueWithIdentifier("armyWebviewSegue", sender: nil)
+        performSegue(withIdentifier: "armyWebviewSegue", sender: nil)
         
     }
 

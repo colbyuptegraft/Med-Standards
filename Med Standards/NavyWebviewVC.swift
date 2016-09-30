@@ -21,13 +21,13 @@ class NavyWebviewVC: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         navy.link = "PDFs_Navy/"
         
-        let reloadButton = UIBarButtonItem(image: redoIcon, style: .Plain, target: self, action: #selector(NavyWebviewVC.webViewLoad))
-        let iBooksButton:UIBarButtonItem = UIBarButtonItem(image: downloadIcon, style: .Plain, target: self, action: #selector(NavyWebviewVC.iBooksLaunch))
-        let backButton = UIBarButtonItem(image: backArrow, style: .Plain, target: self, action: #selector(NavyWebviewVC.goBack))
+        let reloadButton = UIBarButtonItem(image: redoIcon, style: .plain, target: self, action: #selector(NavyWebviewVC.webViewLoad))
+        let iBooksButton:UIBarButtonItem = UIBarButtonItem(image: downloadIcon, style: .plain, target: self, action: #selector(NavyWebviewVC.iBooksLaunch))
+        let backButton = UIBarButtonItem(image: backArrow, style: .plain, target: self, action: #selector(NavyWebviewVC.goBack))
         self.navigationItem.setRightBarButtonItems([backButton, reloadButton, iBooksButton], animated: false)
         
         navyWebview.scalesPageToFit = true
-        navyWebview.multipleTouchEnabled = true
+        navyWebview.isMultipleTouchEnabled = true
         
         webViewLoad()
         
@@ -39,14 +39,14 @@ class NavyWebviewVC: UIViewController, UIWebViewDelegate {
         if navy.selection == navy.waiverGuideTitle {
             self.title = navy.waiverGuideTitle
             navy.link += navy.waiverGuidePDF
-            let path = NSBundle.mainBundle().URLForResource("pdfjs/web/NavyWaiverGuideViewer", withExtension: "html")
-            let request = NSURLRequest(URL: path!)
+            let path = Bundle.main.url(forResource: "pdfjs/web/NavyWaiverGuideViewer", withExtension: "html")
+            let request = URLRequest(url: path!)
             navyWebview?.loadRequest(request)
         } else if navy.selection == navy.usnManmedTitle {
             self.title = navy.usnManmedTitle
             navy.link += navy.usnManmedPDF
-            let path = NSBundle.mainBundle().URLForResource("pdfjs/web/NavyManmed", withExtension: "html")
-            let request = NSURLRequest(URL: path!)
+            let path = Bundle.main.url(forResource: "pdfjs/web/NavyManmed", withExtension: "html")
+            let request = URLRequest(url: path!)
             navyWebview?.loadRequest(request)
         }
         else {
@@ -58,12 +58,12 @@ class NavyWebviewVC: UIViewController, UIWebViewDelegate {
     func iBooksLaunch() {
         print("button pressed")
         
-        if let path = NSBundle.mainBundle().pathForResource(navy.link, ofType: "pdf") {
-            let targetURL = NSURL.fileURLWithPath(path)
-            docController = UIDocumentInteractionController(URL: targetURL)
-            let url = NSURL(string:"itms-books:");
-            if UIApplication.sharedApplication().canOpenURL(url!) {
-                docController!.presentOpenInMenuFromRect(CGRectZero, inView: self.view, animated: true)
+        if let path = Bundle.main.path(forResource: navy.link, ofType: "pdf") {
+            let targetURL = URL(fileURLWithPath: path)
+            docController = UIDocumentInteractionController(url: targetURL)
+            let url = URL(string:"itms-books:");
+            if UIApplication.shared.canOpenURL(url!) {
+                docController!.presentOpenInMenu(from: CGRect.zero, in: self.view, animated: true)
                 print("iBooks is installed")
             } else {
                 print("iBooks is not installed")
@@ -77,24 +77,24 @@ class NavyWebviewVC: UIViewController, UIWebViewDelegate {
         let message = NSLocalizedString("iBooks is not installed.", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
         
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The simple alert's cancel action occured.")
         }
         alertController.addAction(cancelAction)
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
     
     func docError() {
         let title = NSLocalizedString("Error", comment: "")
         let message = NSLocalizedString("Document not found.  Please contact ColbyCoApps@gmail.com.", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The simple alert's cancel action occured.")
         }
         alertController.addAction(cancelAction)
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
 
     func goBack() {

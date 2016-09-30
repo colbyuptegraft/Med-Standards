@@ -7,6 +7,26 @@
 //
 
 import UIKit
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l >= r
+  default:
+    return !(lhs < rhs)
+  }
+}
+
 
 class AFOxConvVC: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
     
@@ -21,9 +41,9 @@ class AFOxConvVC: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
     
     let infoIcon:UIImage = UIImage(named: "info.png")!
     
-    @IBAction func calculateButton(sender: AnyObject) {
+    @IBAction func calculateButton(_ sender: AnyObject) {
         calculate()
-        scrollerView.setContentOffset(CGPointMake(0, result.frame.origin.y - 75), animated: true)
+        scrollerView.setContentOffset(CGPoint(x: 0, y: result.frame.origin.y - 75), animated: true)
 
     }
     
@@ -34,53 +54,53 @@ class AFOxConvVC: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
         self.startingElevation.delegate = self
         self.cabinAltitude.delegate = self
         let _: UIScrollViewKeyboardDismissMode
-        self.scrollerView.keyboardDismissMode = .Interactive
+        self.scrollerView.keyboardDismissMode = .interactive
         
-        let infoButton = UIBarButtonItem(image: infoIcon, style: .Plain, target: self, action: #selector(AFOxConvVC.segue))
-        self.navigationItem.setRightBarButtonItem(infoButton, animated: false)
+        let infoButton = UIBarButtonItem(image: infoIcon, style: .plain, target: self, action: #selector(AFOxConvVC.segue))
+        self.navigationItem.setRightBarButton(infoButton, animated: false)
     }
     
     func segue() {
-        performSegueWithIdentifier("OxConvAboutSegue", sender: nil)
+        performSegue(withIdentifier: "OxConvAboutSegue", sender: nil)
     }
     
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        let screenSize: CGRect = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
         let scrollHeight = screenHeight * 1.5
-        self.scrollerView.userInteractionEnabled = true
-        self.scrollerView.contentSize = CGSizeMake(screenWidth, scrollHeight)
+        self.scrollerView.isUserInteractionEnabled = true
+        self.scrollerView.contentSize = CGSize(width: screenWidth, height: scrollHeight)
     }
     
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if textField == self.startingElevation {
             self.cabinAltitude.becomeFirstResponder()
-            scrollerView.setContentOffset(CGPointMake(0, cabinAltitude.frame.origin.y - 75), animated: true)
+            scrollerView.setContentOffset(CGPoint(x: 0, y: cabinAltitude.frame.origin.y - 75), animated: true)
         } else if textField == self.cabinAltitude {
             self.initialFiOx.becomeFirstResponder()
-            scrollerView.setContentOffset(CGPointMake(0, initialFiOx.frame.origin.y - 75), animated: true)
+            scrollerView.setContentOffset(CGPoint(x: 0, y: initialFiOx.frame.origin.y - 75), animated: true)
         } else {
             self.initialFiOx.resignFirstResponder()
             calculate()
-            scrollerView.setContentOffset(CGPointMake(0, result.frame.origin.y - 75), animated: true)
+            scrollerView.setContentOffset(CGPoint(x: 0, y: result.frame.origin.y - 75), animated: true)
         }
         
         return true
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == self.startingElevation {
-            scrollerView.setContentOffset(CGPointMake(0, startingElevation.frame.origin.y - 75), animated: true)
+            scrollerView.setContentOffset(CGPoint(x: 0, y: startingElevation.frame.origin.y - 75), animated: true)
         } else if textField == self.cabinAltitude {
-            scrollerView.setContentOffset(CGPointMake(0, cabinAltitude.frame.origin.y - 75), animated: true)
+            scrollerView.setContentOffset(CGPoint(x: 0, y: cabinAltitude.frame.origin.y - 75), animated: true)
         } else if textField == self.initialFiOx {
-            scrollerView.setContentOffset(CGPointMake(0, initialFiOx.frame.origin.y - 75), animated: true)
+            scrollerView.setContentOffset(CGPoint(x: 0, y: initialFiOx.frame.origin.y - 75), animated: true)
         }
     }
     
@@ -194,12 +214,12 @@ class AFOxConvVC: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
         let message = NSLocalizedString("The Starting Elevation and Cabin Altitude are the same.  Recheck these values.", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
         
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The simple alert's cancel action occured.")
         }
         alertController.addAction(cancelAction)
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
     
     func finalResultZeroAlert() {
@@ -207,12 +227,12 @@ class AFOxConvVC: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
         let message = NSLocalizedString("FiO2 cannot be < 0%.", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
         
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The simple alert's cancel action occured.")
         }
         alertController.addAction(cancelAction)
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
     
     func nilValueAlert() {
@@ -220,12 +240,12 @@ class AFOxConvVC: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
         let message = NSLocalizedString("Please enter whole numbers.", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
         
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The simple alert's cancel action occured.")
         }
         alertController.addAction(cancelAction)
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
     
     func cabAltAlert() {
@@ -233,12 +253,12 @@ class AFOxConvVC: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
         let message = NSLocalizedString("Cabin Altitude must be > 0 feet.", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
         
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The simple alert's cancel action occured.")
         }
         alertController.addAction(cancelAction)
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
     
     func lowFiO2Alert() {
@@ -246,12 +266,12 @@ class AFOxConvVC: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
         let message = NSLocalizedString("Initial FiO2 cannot be < 21%.", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
         
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The simple alert's cancel action occured.")
         }
         alertController.addAction(cancelAction)
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
     
 }

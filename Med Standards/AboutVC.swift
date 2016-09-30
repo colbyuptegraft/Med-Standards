@@ -26,12 +26,12 @@ class AboutVC: UIViewController, UIScrollViewDelegate {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        let screenSize: CGRect = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
         let scrollHeight = screenHeight * 1.5
-        self.scrollView.userInteractionEnabled = true
-        self.scrollView.contentSize = CGSizeMake(screenWidth, scrollHeight)
+        self.scrollView.isUserInteractionEnabled = true
+        self.scrollView.contentSize = CGSize(width: screenWidth, height: scrollHeight)
         self.scrollView.showsVerticalScrollIndicator = true
         
       

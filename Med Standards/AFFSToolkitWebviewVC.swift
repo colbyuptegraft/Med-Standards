@@ -22,10 +22,10 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
         
         aF.link = "PDFs_AirForce/Toolkit/"
         
-        let reloadButton = UIBarButtonItem(image: redoIcon, style: .Plain, target: self, action: #selector(AFFSToolkitWebviewVC.webViewLoad))
-        let iBooksButton:UIBarButtonItem = UIBarButtonItem(image: downloadIcon, style: .Plain, target: self, action: #selector(AFFSToolkitWebviewVC.iBooksLaunch))
-        let backButton = UIBarButtonItem(image: backArrow, style: .Plain, target: self, action: #selector(AFFSToolkitWebviewVC.goBack))
-        let forwardButton = UIBarButtonItem(image: forwardArrow, style: .Plain, target: self, action: #selector(AFFSToolkitWebviewVC.goForward))
+        let reloadButton = UIBarButtonItem(image: redoIcon, style: .plain, target: self, action: #selector(AFFSToolkitWebviewVC.webViewLoad))
+        let iBooksButton:UIBarButtonItem = UIBarButtonItem(image: downloadIcon, style: .plain, target: self, action: #selector(AFFSToolkitWebviewVC.iBooksLaunch))
+        let backButton = UIBarButtonItem(image: backArrow, style: .plain, target: self, action: #selector(AFFSToolkitWebviewVC.goBack))
+        let forwardButton = UIBarButtonItem(image: forwardArrow, style: .plain, target: self, action: #selector(AFFSToolkitWebviewVC.goForward))
         
         if aF.selection == aF.pracGuidTitle {
             self.navigationItem.setRightBarButtonItems([forwardButton, backButton, reloadButton], animated: false)
@@ -34,7 +34,7 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
         }
         
         aFWebview.scalesPageToFit = true
-        aFWebview.multipleTouchEnabled = true
+        aFWebview.isMultipleTouchEnabled = true
         
         webViewLoad()
     }
@@ -44,26 +44,26 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
         if aF.selection == aF.nutSupTitle {
             self.title = aF.nutSupTitle
             aF.link += aF.nutSupPDF
-            let path = NSBundle.mainBundle().URLForResource("pdfjs/web/AFDietarySupp", withExtension: "html")
-            let request = NSURLRequest(URL: path!)
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFDietarySupp", withExtension: "html")
+            let request = URLRequest(url: path!)
             aFWebview?.loadRequest(request)
         } else if aF.selection == aF.sgpTitle {
             self.title = aF.sgpTitle
             aF.link += aF.sgpPDF
-            let path = NSBundle.mainBundle().URLForResource("pdfjs/web/AFSGPearls", withExtension: "html")
-            let request = NSURLRequest(URL: path!)
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFSGPearls", withExtension: "html")
+            let request = URLRequest(url: path!)
             aFWebview?.loadRequest(request)
         } else if aF.selection == aF.specDescTitle {
             self.title = aF.specDescTitle
             aF.link += aF.specDescPDF
-            let path = NSBundle.mainBundle().URLForResource("pdfjs/web/AFSpecDesc", withExtension: "html")
-            let request = NSURLRequest(URL: path!)
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFSpecDesc", withExtension: "html")
+            let request = URLRequest(url: path!)
             aFWebview?.loadRequest(request)
         } else if aF.selection == aF.pracGuidTitle {
             self.title = aF.pracGuidTitle
             let url = "http://www.asams.org/guidelines.htm"
-            let requestUrl = NSURL(string: url)
-            let request = NSURLRequest(URL: requestUrl!)
+            let requestUrl = URL(string: url)
+            let request = URLRequest(url: requestUrl!)
             aFWebview?.loadRequest(request)
         } else {
             docError()
@@ -73,12 +73,12 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
     func iBooksLaunch() {
         print("button pressed")
         
-        if let path = NSBundle.mainBundle().pathForResource(aF.link, ofType: "pdf") {
-            let targetURL = NSURL.fileURLWithPath(path)
-            docController = UIDocumentInteractionController(URL: targetURL)
-            let url = NSURL(string:"itms-books:");
-            if UIApplication.sharedApplication().canOpenURL(url!) {
-                self.docController!.presentOpenInMenuFromRect(CGRectZero, inView: self.view, animated: true)
+        if let path = Bundle.main.path(forResource: aF.link, ofType: "pdf") {
+            let targetURL = URL(fileURLWithPath: path)
+            docController = UIDocumentInteractionController(url: targetURL)
+            let url = URL(string:"itms-books:");
+            if UIApplication.shared.canOpenURL(url!) {
+                self.docController!.presentOpenInMenu(from: CGRect.zero, in: self.view, animated: true)
                 print("iBooks is installed")
             } else {
                 print("iBooks is not installed")
@@ -91,24 +91,24 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
         let title = NSLocalizedString("Error", comment: "")
         let message = NSLocalizedString("iBooks is not installed.", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The simple alert's cancel action occured.")
         }
         alertController.addAction(cancelAction)
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
     
     func docError() {
         let title = NSLocalizedString("Error", comment: "")
         let message = NSLocalizedString("Document not found.  Please contact ColbyCoApps@gmail.com.", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The simple alert's cancel action occured.")
         }
         alertController.addAction(cancelAction)
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
     
     func goBack() {
