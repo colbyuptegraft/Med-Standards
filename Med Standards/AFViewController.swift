@@ -37,8 +37,8 @@ struct aF {
     static let msdPDF = "AF Medical Standards Directory (11 Sep 2016)"
     
     static let wgTitle = "Waiver Guide"
-    static let wgDetail = "Air Force Waiver Guide (8 Aug 2016)"
-    static let wgPDF = "AF Waiver Guide (8 Aug 2016)"
+    static let wgDetail = "Air Force Waiver Guide (3 Nov 2016)"
+    static let wgPDF = "AF Waiver Guide (3 Nov 2016)"
     
     static let fsToolkitTitle = "Flight Surgeon Toolkit"
     static let fsToolkitDetail = "Useful Flight Medicine Resources"
@@ -85,8 +85,8 @@ struct aF {
     static let afi11401PDF = "AFI 11-401 Aviation Management (18 Mar 2016)"
     
     static let afi11402Title = "AFI 11-402"
-    static let afi11402Detail = "Aviation & Parachutist Service, Aeronautical Ratings & Aviation Badges (05 Feb 2013)"
-    static let afi11402PDF = "AFI 11-402 Aviation & Parachutist Service Aeronautical Ratings & Aviation Badges (05 Feb 2013)"
+    static let afi11402Detail = "Aviation & Parachutist Service, Aeronautical Ratings & Aviation Badges (4 Nov 2016)"
+    static let afi11402PDF = "AFI 11-402 Aviation & Parachutist Service Aeronautical Ratings & Aviation Badges (4 Nov 2016)"
     
     static let afi362101Title = "AFI 36-2101"
     static let afi362101Detail = "Classifying Military Personnel (25 Jun 2013 + 18 Nov 2013 Updates)"
@@ -145,8 +145,8 @@ struct aF {
     static let aetci48103PDF = "AF AETCI 48-103 Training Health & Human Performance Program (10 Dec 2014)"
     
     static let afecdp1Title = "AFECD"
-    static let afecdp1Detail = "Air Force Enlisted Classification Directory (30 Apr 2016)"
-    static let afecdp1PDF = "AFECD (30 Apr 2016)"
+    static let afecdp1Detail = "Air Force Enlisted Classification Directory (31 Oct 2016)"
+    static let afecdp1PDF = "AFECD (31 Oct 2016)"
     
     static let afman48147Title = "AFMAN 48-147"
     static let afman48147Detail = "Tri-Service Food Code (30 Apr 2014)"
@@ -157,8 +157,8 @@ struct aF {
     static let afman91223PDF = "AFMAN 91-223 Aviation Safety Investigations & Reports (8 Jun 2016).pdf"
     
     static let afocdTitle = "AFOCD"
-    static let afocdDetail = "Air Force Officer Classification Directory (30 Apr 2016)"
-    static let afocdPDF = "AFOCD (30 Apr 2016)"
+    static let afocdDetail = "Air Force Officer Classification Directory (31 Oct 2016)"
+    static let afocdPDF = "AFOCD (31 Oct 2016)"
     
     static let afpam48133Title = "AFPAM 48-133 (Rescinded)"
     static let afpam48133Detail = "Physical Examination Techniques (1 Jun 2000)"
