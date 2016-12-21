@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 10-203 Supplemental Guidance Profile Timelines (Jun 2014).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/Toolkit/AF Flight Surgeon Flying Operations Guide (4 Oct 2013).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

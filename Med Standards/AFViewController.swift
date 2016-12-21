@@ -33,8 +33,8 @@ struct aF {
     static let modMedsPDF = "AF Missile Operator Approved Med List (11 Sep 2015)"
     
     static let msdTitle = "MSD"
-    static let msdDetail = "Medical Standards Directory (11 Sep 2016)"
-    static let msdPDF = "AF Medical Standards Directory (11 Sep 2016)"
+    static let msdDetail = "Medical Standards Directory (29 Nov 2016)"
+    static let msdPDF = "AF Medical Standards Directory (29 Nov 2016)"
     
     static let wgTitle = "Waiver Guide"
     static let wgDetail = "Air Force Waiver Guide (3 Nov 2016)"
@@ -49,12 +49,16 @@ struct aF {
 // Other AFI's
     
     static let afi10203sgTitle = "AFI 10-203 Supplemental Guidance"
-    static let afi10203sgDetail = "Supplemental Guidance for DLCs (Jun 2014)"
-    static let afi10203sgPDF = "AFI 10-203 Supplemental Guidance (Jun 2014)"
+    static let afi10203sgDetail = "Supplemental Guidance for DLCs (17 Nov 2016)"
+    static let afi10203sgPDF = "AFI 10-203 Supplemental Guidance (17 Nov 2016)"
     
-    static let afi10203sgtTitle = "AFI 10-203 Supplemental Guidance Templates"
-    static let afi10203sgtDetail = "Templates for DLCs (Jun 2014)"
-    static let afi10203sgtPDF = "AFI 10-203 Supplemental Guidance Templates (Jun 2014)"
+    static let afi10203sgtTitle = "AFI 10-203 Supplemental Profile Timelines"
+    static let afi10203sgtDetail = "Timelines for DLCs (Jun 2014)"
+    static let afi10203sgtPDF = "AFI 10-203 Supplemental Guidance Profile Timelines (Jun 2014)"
+    
+    static let afi10203sgtmTitle = "AFI 10-203 Supplemental Profile Templates"
+    static let afi10203sgtmDetail = "Templates for DLCs (4 Dec 2016)"
+    static let afi10203sgtmPDF = "AFI 10-203 Supplemental Guidance Profile Templates (4 Dec 2014)"
     
     static let afi11202v1Title = "AFI 11-202 v1"
     static let afi11202v1Detail = "Aircrew Training (22 Nov 2010)"
@@ -170,6 +174,14 @@ struct aF {
     
 // FS Toolkit Items
     
+    static let fsfogTitle = "Flying Operations Guide"
+    static let fsfogDetail = "AF Flight Surgeon Flying Operations Guide (4 Oct 2013)"
+    static let fsfogPDF = "AF Flight Surgeon Flying Operations Guide (4 Oct 2013)"
+    
+    static let fsqrTitle = "Quick Reference Guide"
+    static let fsqrDetail = "AF Flight Surgeon Quick Reference Guide (16 Feb 2016)"
+    static let fsqrPDF = "AF Flight Surgeon Quick Reference (16 Feb 2016)"
+    
     static let nutSupTitle = "Dietary Supplements"
     static let nutSupDetail = "Nutritional & Ergogenic Supplements: Guidance & Policy"
     static let nutSupPDF = "Dietary Supplements"
@@ -186,6 +198,10 @@ struct aF {
     static let sgpTitle = "SGP-earls (v10.15)"
     static let sgpDetail = "Overview of the Chief of Aerospace Medicine (SGP) Roles & Responsibilities"
     static let sgpPDF = "SGP-earls (v10.15)"
+    
+    static let metalsTitle = "Sample METALS Table"
+    static let metalsDetail = "Flight Surgeon Mission-Essential Tasks / Activities for Line Support Table (26 Jun 2014)"
+    static let metalsPDF = "Sample METALS Table (26 Jun 2014)"
     
     static let specDescTitle = "Speciality Descriptions"
     static let specDescDetail = "48AX, 48GX, 48RX, & 48VX Specialty Descriptions (30 Apr 2015)"

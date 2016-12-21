@@ -214,6 +214,12 @@ class AFOtherAFIWebviewVC: UIViewController, UIWebViewDelegate {
             let path = Bundle.main.url(forResource: "pdfjs/web/AFAFI10-203sgt", withExtension: "html")
             let request = URLRequest(url: path!)
             aFWebview?.loadRequest(request)
+        } else if aF.selection == aF.afi10203sgtmTitle {
+            self.title = aF.afi10203sgtmDetail
+            aF.link += aF.afi10203sgtmPDF
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFAFI10-203sgtm", withExtension: "html")
+            let request = URLRequest(url: path!)
+            aFWebview?.loadRequest(request)
         } else {
             docError()
         }

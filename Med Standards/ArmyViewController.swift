@@ -20,13 +20,16 @@ struct army {
     static let fSChecklistDetail = "Aeromedical Policy Letters & Technical Bulletins (May 2015)"
     static let fSChecklistPDF = "Army FS Checklist (May 2015)"
     
+    static let petableTitle = "PE Requirements Table"
+    static let petableDetail = "Army Physical Exam Requirements Table (12 Nov 2002)"
+    static let petablePDF = "Army Physical Exam Table (12 Nov 2002)"
     
 }
 
 class ArmyViewController: UITableViewController {
     
-    let armyDocArray:NSArray = [army.ar40501Title, army.fSChecklistTitle]
-    let armyDocDetailArray:NSArray = [army.ar40501Detail, army.fSChecklistDetail]
+    let armyDocArray:NSArray = [army.ar40501Title, army.fSChecklistTitle, army.petableTitle]
+    let armyDocDetailArray:NSArray = [army.ar40501Detail, army.fSChecklistDetail, army.petableDetail]
     
     override func viewDidLoad() {
         super.viewDidLoad()

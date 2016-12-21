@@ -45,7 +45,13 @@ class ArmyWebviewVC: UIViewController, UIWebViewDelegate {
             let path = Bundle.main.url(forResource: "pdfjs/web/ArmyFSChecklistViewer", withExtension: "html")
             let request = URLRequest(url: path!)
             armyWebview?.loadRequest(request)
-        } else {
+        } else if army.selection == army.petableTitle {
+            self.title = army.petableTitle
+            army.link += army.petablePDF
+            let path = Bundle.main.url(forResource: "pdfjs/web/ArmyPEtable", withExtension: "html")
+            let request = URLRequest(url: path!)
+            armyWebview?.loadRequest(request)
+        }else {
             docError()
         }
 

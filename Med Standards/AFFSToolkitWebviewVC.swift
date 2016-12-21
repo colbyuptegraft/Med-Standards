@@ -65,7 +65,25 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
             let requestUrl = URL(string: url)
             let request = URLRequest(url: requestUrl!)
             aFWebview?.loadRequest(request)
-        } else {
+        } else if aF.selection == aF.fsfogTitle {
+            self.title = aF.fsfogTitle
+            aF.link += aF.fsfogPDF
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFfsfog", withExtension: "html")
+            let request = URLRequest(url: path!)
+            aFWebview?.loadRequest(request)
+        } else if aF.selection == aF.fsqrTitle {
+            self.title = aF.fsqrTitle
+            aF.link += aF.fsqrPDF
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFfsqr", withExtension: "html")
+            let request = URLRequest(url: path!)
+            aFWebview?.loadRequest(request)
+        } else if aF.selection == aF.metalsTitle {
+            self.title = aF.metalsTitle
+            aF.link += aF.metalsPDF
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFmetals", withExtension: "html")
+            let request = URLRequest(url: path!)
+            aFWebview?.loadRequest(request)
+        }else {
             docError()
         }
     }
