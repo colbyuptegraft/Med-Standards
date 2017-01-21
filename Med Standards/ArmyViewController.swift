@@ -13,8 +13,8 @@ struct army {
     static var link = ""
     
     static let ar40501Title = "AR 40-501"
-    static let ar40501Detail = "Standards of Medical Fitness (11 Aug 2015)"
-    static let ar40501PDF = "AR 40-501 Standards of Medical Fitness (11 Aug 2015)"
+    static let ar40501Detail = "Standards of Medical Fitness (22 Dec 2016)"
+    static let ar40501PDF = "AR 40-501 Standards of Medical Fitness (22 Dec 2016)"
     
     static let fSChecklistTitle = "FS Checklist"
     static let fSChecklistDetail = "Aeromedical Policy Letters & Technical Bulletins (May 2015)"

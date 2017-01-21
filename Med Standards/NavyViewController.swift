@@ -17,8 +17,8 @@ struct navy {
     static let waiverGuidePDF = "Navy Aeromedical Reference & Waiver Guide (19 Apr 2016)"
 
     static let usnManmedTitle = "Navy ManMed Chapter 15"
-    static let usnManmedDetail = "Physical Exams & Standards (10 Mar 2016)"
-    static let usnManmedPDF = "USN ManMed Chapter 15 Physical Exams & Standards for Enlistment, Commission, & Special Duty (10 Mar 2016)"
+    static let usnManmedDetail = "Physical Exams & Standards (9 Jan 2017)"
+    static let usnManmedPDF = "USN ManMed Chapter 15 Physical Exams & Standards for Enlistment, Commission, & Special Duty (9 Jan 2017)"
 
 }
 

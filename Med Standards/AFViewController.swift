@@ -21,8 +21,8 @@ struct aF {
     static let mesPDF = "AFI 48-123 Medical Examinations & Standards (19 Sep 2016)"
     
     static let medsTitle = "Approved Med List"
-    static let medsDetail = "Official Air Force Aerospace Medicine Approved Medications (11 Sep 2016)"
-    static let medsPDF = "AF Approved Med List (11 Sep 2016)"
+    static let medsDetail = "Official Air Force Aerospace Medicine Approved Medications (1 Jan 2017)"
+    static let medsPDF = "AF Approved Med List (1 Jan 2017)"
     
     static let otcMedsTitle = "OTC Approved Med List"
     static let otcMedsDetail = "Over-the-Counter Medications Not Requiring Flight Surgeon Approval (09 Jan 2014)"
@@ -137,8 +137,8 @@ struct aF {
     static let afi91202PDF = "AFI 91-202 USAF Mishap Prevention Program (16 Feb 2016).pdf"
     
     static let afi91204Title = "AFI 91-204"
-    static let afi91204Detail = "Safety Investigations & Reports (11 Jan 2016)"
-    static let afi91204PDF = "AFI 91-204 Safety Investigations & Reports (11 Jan 2016)"
+    static let afi91204Detail = "Safety Investigations & Reports (19 Jan 2017)"
+    static let afi91204PDF = "AFI 91-204 Safety Investigations & Reports (19 Jan 2017)"
     
     static let aetci48102Title = "AETCI 48-102"
     static let aetci48102Detail = "Medical Management of Undergraduate Flying Students (05 Nov 2013)"
