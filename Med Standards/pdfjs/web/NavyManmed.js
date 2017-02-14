@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_Navy/USN ManMed Chapter 15 Physical Exams & Standards for Enlistment, Commission, & Special Duty (9 Jan 2017).pdf';
+var DEFAULT_URL = '../../PDFs_Navy/USN ManMed Chapter 15 Physical Exams & Standards for Enlistment, Commission, & Special Duty (3 Feb 2017).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;
