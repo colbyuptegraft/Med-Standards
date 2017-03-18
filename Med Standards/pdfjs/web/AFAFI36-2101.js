@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 36-2101 Classifying Military Personnel (25 Jun 2013 + 18 Nov 2013 Updates).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 36-2101 Classifying Military Personnel (9 Mar 2017).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

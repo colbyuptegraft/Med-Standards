@@ -93,8 +93,8 @@ struct aF {
     static let afi11402PDF = "AFI 11-402 Aviation & Parachutist Service Aeronautical Ratings & Aviation Badges (4 Nov 2016)"
     
     static let afi362101Title = "AFI 36-2101"
-    static let afi362101Detail = "Classifying Military Personnel (25 Jun 2013 + 18 Nov 2013 Updates)"
-    static let afi362101PDF = "AFI 36-2101 Classifying Military Personnel (25 Jun 2013 + 18 Nov 2013 Updates)"
+    static let afi362101Detail = "Classifying Military Personnel (9 Mar 2017)"
+    static let afi362101PDF = "AFI 36-2101 Classifying Military Personnel (9 Mar 2017)"
     
     static let afi362905Title = "AFI 36-2905"
     static let afi362905Detail = "Fitness Program (21 Oct 2013 + 27 Aug 2015 Updates)"
@@ -133,8 +133,8 @@ struct aF {
     static let afi48149PDF = "AFI 48-149 Flight & Operational Medicine Program (18 Dec 2015)"
     
     static let afi91202Title = "AFI 91-202"
-    static let afi91202Detail = "The US Air Force Mishap Prevention Program (16 Feb 2016)"
-    static let afi91202PDF = "AFI 91-202 USAF Mishap Prevention Program (16 Feb 2016).pdf"
+    static let afi91202Detail = "The US Air Force Mishap Prevention Program (15 Feb 2017)"
+    static let afi91202PDF = "AFI 91-202 USAF Mishap Prevention Program (15 Feb 2017).pdf"
     
     static let afi91204Title = "AFI 91-204"
     static let afi91204Detail = "Safety Investigations & Reports (19 Jan 2017)"
