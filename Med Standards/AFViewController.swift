@@ -33,12 +33,12 @@ struct aF {
     static let modMedsPDF = "AF Missile Operator Approved Med List (11 Sep 2015)"
     
     static let msdTitle = "MSD"
-    static let msdDetail = "Medical Standards Directory (29 Nov 2016)"
-    static let msdPDF = "AF Medical Standards Directory (29 Nov 2016)"
+    static let msdDetail = "Medical Standards Directory (29 May 2017)"
+    static let msdPDF = "AF Medical Standards Directory (29 May 2017)"
     
     static let wgTitle = "Waiver Guide"
-    static let wgDetail = "Air Force Waiver Guide (10 Apr 2017)"
-    static let wgPDF = "AF Waiver Guide (10 Apr 2017)"
+    static let wgDetail = "Air Force Waiver Guide (1 Jun 2017)"
+    static let wgPDF = "AF Waiver Guide (1 Jun 2017)"
     
     static let fsToolkitTitle = "Flight Surgeon Toolkit"
     static let fsToolkitDetail = "Useful Flight Medicine Resources"
@@ -133,8 +133,8 @@ struct aF {
     static let afi48149PDF = "AFI 48-149 Flight & Operational Medicine Program (18 Dec 2015)"
     
     static let afi91202Title = "AFI 91-202"
-    static let afi91202Detail = "The US Air Force Mishap Prevention Program (15 Feb 2017)"
-    static let afi91202PDF = "AFI 91-202 USAF Mishap Prevention Program (15 Feb 2017).pdf"
+    static let afi91202Detail = "The US Air Force Mishap Prevention Program (25 May 2017)"
+    static let afi91202PDF = "AFI 91-202 USAF Mishap Prevention Program (25 May 2017).pdf"
     
     static let afi91204Title = "AFI 91-204"
     static let afi91204Detail = "Safety Investigations & Reports (19 Jan 2017)"

@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/AF Medical Standards Directory (29 Nov 2016).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/AF Medical Standards Directory (29 May 2017).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;
