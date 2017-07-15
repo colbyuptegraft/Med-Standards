@@ -21,8 +21,8 @@ struct aF {
     static let mesPDF = "AFI 48-123 Medical Examinations & Standards (19 Sep 2016)"
     
     static let medsTitle = "Approved Med List"
-    static let medsDetail = "Official Air Force Aerospace Medicine Approved Medications (1 Jan 2017)"
-    static let medsPDF = "AF Approved Med List (1 Jan 2017)"
+    static let medsDetail = "Official Air Force Aerospace Medicine Approved Medications (13 Jun 2017)"
+    static let medsPDF = "AF Approved Med List (13 Jun 2017)"
     
     static let otcMedsTitle = "OTC Approved Med List"
     static let otcMedsDetail = "Over-the-Counter Medications Not Requiring Flight Surgeon Approval (09 Jan 2014)"
@@ -61,8 +61,8 @@ struct aF {
     static let afi10203sgtmPDF = "AFI 10-203 Supplemental Guidance Profile Templates (4 Dec 2014)"
     
     static let afi11202v1Title = "AFI 11-202 v1"
-    static let afi11202v1Detail = "Aircrew Training (22 Nov 2010)"
-    static let afi11202v1PDF = "AFI 11-202V1 Aircrew Training (22 Nov 2010)"
+    static let afi11202v1Detail = "Aircrew Training (27 Jun 2017)"
+    static let afi11202v1PDF = "AFI 11-202V1 Aircrew Training (27 Jun 2017)"
     
     static let afi11202v2Title = "AFI 11-202 v2"
     static let afi11202v2Detail = "Aircrew Standardization/Evaluation Program (13 Sep 2010)"
@@ -77,16 +77,16 @@ struct aF {
     static let afi11301v1PDF = "AFI 11-301V1 Aircrew Flight Equipment Program (25 Feb 2009)"
     
     static let afi11301v2Title = "AFI 11-301 v2"
-    static let afi11301v2Detail = "Management & Configuration Requirements for Aircrew Flight Equipment (AFE) (20 Dec 2013)"
-    static let afi11301v2PDF = "AFI 11-301V2 Management & Configuration Req for AFE (20 Dec 2013)"
+    static let afi11301v2Detail = "Management & Configuration Requirements for Aircrew Flight Equipment (AFE) (13 Jun 2017)"
+    static let afi11301v2PDF = "AFI 11-301V2 Management & Configuration Req for AFE (13 Jun 2017)"
     
     static let afi11301v4Title = "AFI 11-301 v4"
     static let afi11301v4Detail = "Aircrew Laser Eye Protection (ALEP) (17 Feb 2010)"
     static let afi11301v4PDF = "AFI 11-301V4 Aircrew Laser Eye Program (17 Feb 2010)"
     
     static let afi11401Title = "AFI 11-401"
-    static let afi11401Detail = "Aviation Management (18 Mar 2016)"
-    static let afi11401PDF = "AFI 11-401 Aviation Management (18 Mar 2016)"
+    static let afi11401Detail = "Aviation Management (26 Jun 2017)"
+    static let afi11401PDF = "AFI 11-401 Aviation Management (26 Jun 2017)"
     
     static let afi11402Title = "AFI 11-402"
     static let afi11402Detail = "Aviation & Parachutist Service, Aeronautical Ratings & Aviation Badges (4 Nov 2016)"
