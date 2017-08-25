@@ -100,12 +100,6 @@ class AFOtherAFIWebviewVC: UIViewController, UIWebViewDelegate {
             let path = Bundle.main.url(forResource: "pdfjs/web/AFAFI36-2905Viewer", withExtension: "html")
             let request = URLRequest(url: path!)
             aFWebview?.loadRequest(request)
-        } else if aF.selection == aF.afi41307Title {
-            self.title = aF.afi41307Title
-            aF.link += aF.afi41307PDF
-            let path = Bundle.main.url(forResource: "pdfjs/web/AFAFI41-307", withExtension: "html")
-            let request = URLRequest(url: path!)
-            aFWebview?.loadRequest(request)
         } else if aF.selection == aF.afi44170Title {
             self.title = aF.afi44170Title
             aF.link += aF.afi44170PDF
@@ -218,6 +212,24 @@ class AFOtherAFIWebviewVC: UIViewController, UIWebViewDelegate {
             self.title = aF.afi10203sgtmDetail
             aF.link += aF.afi10203sgtmPDF
             let path = Bundle.main.url(forResource: "pdfjs/web/AFAFI10-203sgtm", withExtension: "html")
+            let request = URLRequest(url: path!)
+            aFWebview?.loadRequest(request)
+        } else if aF.selection == aF.afi48307v1Title {
+            self.title = aF.afi48307v1Detail
+            aF.link += aF.afi48307v1PDF
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFAFI48-307V1", withExtension: "html")
+            let request = URLRequest(url: path!)
+            aFWebview?.loadRequest(request)
+        } else if aF.selection == aF.afi48307v2Title {
+            self.title = aF.afi48307v2Detail
+            aF.link += aF.afi48307v2PDF
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFAFI48-307V2", withExtension: "html")
+            let request = URLRequest(url: path!)
+            aFWebview?.loadRequest(request)
+        } else if aF.selection == aF.afi48307v3Title {
+            self.title = aF.afi48307v3Detail
+            aF.link += aF.afi48307v3PDF
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFAFI48-307V3", withExtension: "html")
             let request = URLRequest(url: path!)
             aFWebview?.loadRequest(request)
         } else {

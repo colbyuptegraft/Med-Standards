@@ -37,8 +37,8 @@ struct aF {
     static let msdPDF = "AF Medical Standards Directory (29 May 2017)"
     
     static let wgTitle = "Waiver Guide"
-    static let wgDetail = "Air Force Waiver Guide (1 Jun 2017)"
-    static let wgPDF = "AF Waiver Guide (1 Jun 2017)"
+    static let wgDetail = "Air Force Waiver Guide (21 Aug 2017)"
+    static let wgPDF = "AF Waiver Guide (21 Aug 2017)"
     
     static let fsToolkitTitle = "Flight Surgeon Toolkit"
     static let fsToolkitDetail = "Useful Flight Medicine Resources"
@@ -100,10 +100,6 @@ struct aF {
     static let afi362905Detail = "Fitness Program (21 Oct 2013 + 27 Aug 2015 Updates)"
     static let afi362905PDF = "AFI 36-2905 Fitness Program (21 Oct 2013 + 27 Aug 2015 Updates).pdf"
     
-    static let afi41307Title = "AFI 41-307"
-    static let afi41307Detail = "Aeromedical Evacuation Patient Considerations & Standards of Care (05 Jul 2011)"
-    static let afi41307PDF = "AFI 41-307 Aeromedical Evacuation Patient Considerations & Standards of Care (05 Jul 2011)"
-    
     static let afi44103Title = "AFI 44-103"
     static let afi44103Detail = "Air Force IDMT Program (06 Dec 2013)"
     static let afi44103PDF = "AFI 44-103 Air Force IDMT Program (06 Dec 2013)"
@@ -131,6 +127,18 @@ struct aF {
     static let afi48149Title = "AFI 48-149"
     static let afi48149Detail = "Flight & Operational Medicine Program (FOMP) (18 Dec 2015)"
     static let afi48149PDF = "AFI 48-149 Flight & Operational Medicine Program (18 Dec 2015)"
+    
+    static let afi48307v1Title = "AFI 48-307 v1"
+    static let afi48307v1Detail = "En Route Care & Aeromedical Evacuation Medical Operations"
+    static let afi48307v1PDF = "AFI 48-307v1 En Route Care & Aeromedical Evacuation Medical Operations (9 Jan 2017)"
+    
+    static let afi48307v2Title = "AFI 48-307 v2"
+    static let afi48307v2Detail = "En Route Critical Care"
+    static let afi48307v2PDF = "AFI 48-307v2 En Route Critical Care (10 Jan 2017)"
+    
+    static let afi48307v3Title = "AFI 48-307 v3"
+    static let afi48307v3Detail = "En Route Care Documentation"
+    static let afi48307v3PDF = "AFI 48-307v3 En Route Care Documentation (12 Apr 2016)"
     
     static let afi91202Title = "AFI 91-202"
     static let afi91202Detail = "The US Air Force Mishap Prevention Program (25 May 2017)"
