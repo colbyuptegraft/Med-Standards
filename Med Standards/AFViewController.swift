@@ -85,12 +85,12 @@ struct aF {
     static let afi11301v4PDF = "AFI 11-301V4 Aircrew Laser Eye Program (17 Feb 2010)"
     
     static let afi11401Title = "AFI 11-401"
-    static let afi11401Detail = "Aviation Management (26 Jun 2017)"
-    static let afi11401PDF = "AFI 11-401 Aviation Management (26 Jun 2017)"
+    static let afi11401Detail = "Aviation Management (1 Sep 2017)"
+    static let afi11401PDF = "AFI 11-401 Aviation Management (1 Sep 2017)"
     
     static let afi11402Title = "AFI 11-402"
-    static let afi11402Detail = "Aviation & Parachutist Service, Aeronautical Ratings & Aviation Badges (4 Nov 2016)"
-    static let afi11402PDF = "AFI 11-402 Aviation & Parachutist Service Aeronautical Ratings & Aviation Badges (4 Nov 2016)"
+    static let afi11402Detail = "Aviation & Parachutist Service, Aeronautical Ratings & Aviation Badges (11 Sep 2017)"
+    static let afi11402PDF = "AFI 11-402 Aviation & Parachutist Service Aeronautical Ratings & Aviation Badges (11 Sep 2017)"
     
     static let afi362101Title = "AFI 36-2101"
     static let afi362101Detail = "Classifying Military Personnel (9 Mar 2017)"
@@ -190,12 +190,20 @@ struct aF {
     static let fsqrDetail = "AF Flight Surgeon Quick Reference Guide (16 Feb 2016)"
     static let fsqrPDF = "AF Flight Surgeon Quick Reference (16 Feb 2016)"
     
+    static let metalsTitle = "Sample METALS Table"
+    static let metalsDetail = "Flight Surgeon Mission-Essential Tasks / Activities for Line Support Table (26 Jun 2014)"
+    static let metalsPDF = "Sample METALS Table (26 Jun 2014)"
+    
     static let nutSupTitle = "Dietary Supplements"
     static let nutSupDetail = "Nutritional & Ergogenic Supplements: Guidance & Policy"
     static let nutSupPDF = "Dietary Supplements"
     
     static let oxConTitle = "Altitude Oxygen Converter"
     static let oxConDetail = "Converts Ground-Level FiO2 to Cabin-Altitude Needs for Aeromedical Evacuations"
+    
+    static let phsExMtxTitle = "Physical Exam Matrix"
+    static let phsExMtxDetail = "Physical Examination Matrix for USAF Special Duty Exams (1 Aug 2017)"
+    static let phsExMtxPDF = "Physical Examination Matrix for USAF Special Duty Exams (1 Aug 2017)"
     
     static let pracGuidTitle = "Practice Guidelines"
     static let pracGuidDetail = "American Society of Aerospace Medicine Specialists (ASAMS) Practice Guidelines"
@@ -206,10 +214,6 @@ struct aF {
     static let sgpTitle = "SGP-earls (v10.15)"
     static let sgpDetail = "Overview of the Chief of Aerospace Medicine (SGP) Roles & Responsibilities"
     static let sgpPDF = "SGP-earls (v10.15)"
-    
-    static let metalsTitle = "Sample METALS Table"
-    static let metalsDetail = "Flight Surgeon Mission-Essential Tasks / Activities for Line Support Table (26 Jun 2014)"
-    static let metalsPDF = "Sample METALS Table (26 Jun 2014)"
     
     static let specDescTitle = "Speciality Descriptions"
     static let specDescDetail = "48AX, 48GX, 48RX, & 48VX Specialty Descriptions (30 Apr 2015)"

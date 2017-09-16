@@ -83,7 +83,13 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
             let path = Bundle.main.url(forResource: "pdfjs/web/AFmetals", withExtension: "html")
             let request = URLRequest(url: path!)
             aFWebview?.loadRequest(request)
-        }else {
+        } else if aF.selection == aF.phsExMtxTitle {
+            self.title = aF.phsExMtxTitle
+            aF.link += aF.phsExMtxPDF
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFphsExMtx", withExtension: "html")
+            let request = URLRequest(url: path!)
+            aFWebview?.loadRequest(request)
+        } else {
             docError()
         }
     }
