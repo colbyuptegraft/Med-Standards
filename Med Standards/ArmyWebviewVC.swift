@@ -32,7 +32,7 @@ class ArmyWebviewVC: UIViewController, UIWebViewDelegate {
         webViewLoad()
     }
     
-    func webViewLoad(){
+    @objc func webViewLoad(){
         if army.selection == army.ar40501Title {
             self.title = army.ar40501Title
             army.link += army.ar40501PDF
@@ -57,7 +57,7 @@ class ArmyWebviewVC: UIViewController, UIWebViewDelegate {
 
     }
     
-    func iBooksLaunch() {
+    @objc func iBooksLaunch() {
         print("button pressed")
         
         if let path = Bundle.main.path(forResource: army.link, ofType: "pdf") {
@@ -99,7 +99,7 @@ class ArmyWebviewVC: UIViewController, UIWebViewDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
-    func goBack() {
+    @objc func goBack() {
         armyWebview.goBack()
     }
 

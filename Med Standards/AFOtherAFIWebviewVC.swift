@@ -33,7 +33,7 @@ class AFOtherAFIWebviewVC: UIViewController, UIWebViewDelegate {
     }
     
     
-    func webViewLoad(){
+    @objc func webViewLoad(){
         if aF.selection == aF.aetci48102Title {
             self.title = aF.aetci48102Title
             aF.link += aF.aetci48102PDF
@@ -237,7 +237,7 @@ class AFOtherAFIWebviewVC: UIViewController, UIWebViewDelegate {
         }
     }
     
-    func iBooksLaunch() {
+    @objc func iBooksLaunch() {
         print("button pressed")
         
         if let path = Bundle.main.path(forResource: aF.link, ofType: "pdf") {
@@ -278,7 +278,7 @@ class AFOtherAFIWebviewVC: UIViewController, UIWebViewDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
-    func goBack() {
+    @objc func goBack() {
         aFWebview.goBack()
     }
     

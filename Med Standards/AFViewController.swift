@@ -37,8 +37,8 @@ struct aF {
     static let msdPDF = "AF Medical Standards Directory (29 May 2017)"
     
     static let wgTitle = "Waiver Guide"
-    static let wgDetail = "Air Force Waiver Guide (21 Aug 2017)"
-    static let wgPDF = "AF Waiver Guide (21 Aug 2017)"
+    static let wgDetail = "Air Force Waiver Guide (5 Oct 2017)"
+    static let wgPDF = "AF Waiver Guide (5 Oct 2017)"
     
     static let fsToolkitTitle = "Flight Surgeon Toolkit"
     static let fsToolkitDetail = "Useful Flight Medicine Resources"
@@ -69,12 +69,12 @@ struct aF {
     static let afi11202v2PDF = "AFI 11-202V2 Aircrew Standardization-Evaluation Program (13 Sep 2010)"
     
     static let afi11202v3Title = "AFI 11-202 v3"
-    static let afi11202v3Detail = "General Flight Rules (10 Aug 2016)"
-    static let afi11202v3PDF = "AFI 11-202V3 General Flight Rules (10 Aug 2016)"
+    static let afi11202v3Detail = "General Flight Rules (2 Oct 2017)"
+    static let afi11202v3PDF = "AFI 11-202V3 General Flight Rules (2 Oct 2017)"
     
     static let afi11301v1Title = "AFI 11-301 v1"
-    static let afi11301v1Detail = "Aircrew Flight Equipment (AFE) Program (25 Feb 2009)"
-    static let afi11301v1PDF = "AFI 11-301V1 Aircrew Flight Equipment Program (25 Feb 2009)"
+    static let afi11301v1Detail = "Aircrew Flight Equipment (AFE) Program (10 Oct 2017)"
+    static let afi11301v1PDF = "AFI 11-301V1 Aircrew Flight Equipment Program (10 Oct 2017)"
     
     static let afi11301v2Title = "AFI 11-301 v2"
     static let afi11301v2Detail = "Management & Configuration Requirements for Aircrew Flight Equipment (AFE) (13 Jun 2017)"
@@ -309,10 +309,10 @@ class AFViewController: UITableViewController {
         let titleFont:UIFont? = UIFont(name: "Helvetica", size: 14.0)
         let detailFont:UIFont? = UIFont(name: "Helvetica", size: 12.0)
         
-        let detailText:NSMutableAttributedString = NSMutableAttributedString(string: "\n" + (aFDocDetailArray[(indexPath as NSIndexPath).row] as! String), attributes: (NSDictionary(object: detailFont!, forKey: NSFontAttributeName as NSCopying) as! [String: AnyObject]))
-        detailText.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGray, range: NSMakeRange(0, detailText.length))
+        let detailText:NSMutableAttributedString = NSMutableAttributedString(string: "\n" + (aFDocDetailArray[(indexPath as NSIndexPath).row] as! String), attributes: (NSDictionary(object: detailFont!, forKey: NSAttributedStringKey.font as NSCopying) as! [NSAttributedStringKey : Any]))
+        detailText.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.lightGray, range: NSMakeRange(0, detailText.length))
         
-        let title = NSMutableAttributedString(string: aFDocArray[(indexPath as NSIndexPath).row] as! String, attributes: (NSDictionary(object: titleFont!, forKey: NSFontAttributeName as NSCopying) as! [String : AnyObject]))
+        let title = NSMutableAttributedString(string: aFDocArray[(indexPath as NSIndexPath).row] as! String, attributes: (NSDictionary(object: titleFont!, forKey: NSAttributedStringKey.font as NSCopying) as! [NSAttributedStringKey : Any]))
         
         title.append(detailText)
         

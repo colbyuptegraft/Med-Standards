@@ -40,7 +40,7 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
     }
     
     
-    func webViewLoad(){
+    @objc func webViewLoad(){
         if aF.selection == aF.nutSupTitle {
             self.title = aF.nutSupTitle
             aF.link += aF.nutSupPDF
@@ -94,7 +94,7 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
         }
     }
     
-    func iBooksLaunch() {
+    @objc func iBooksLaunch() {
         print("button pressed")
         
         if let path = Bundle.main.path(forResource: aF.link, ofType: "pdf") {
@@ -135,11 +135,11 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
-    func goBack() {
+    @objc func goBack() {
         aFWebview.goBack()
     }
     
-    func goForward(){
+    @objc func goForward(){
         aFWebview.goForward()
     }
     

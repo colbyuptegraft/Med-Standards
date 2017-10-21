@@ -33,7 +33,7 @@ class AFWebviewVC: UIViewController, UIWebViewDelegate {
     }
     
     
-    func webViewLoad(){
+    @objc func webViewLoad(){
         if aF.selection == aF.dlcTitle {
             self.title = aF.dlcTitle
             aF.link += aF.dlcPDF
@@ -81,7 +81,7 @@ class AFWebviewVC: UIViewController, UIWebViewDelegate {
         }
     }
     
-    func iBooksLaunch() {
+    @objc func iBooksLaunch() {
         print("button pressed")
         if let path = Bundle.main.path(forResource: aF.link, ofType: "pdf") {
             let targetURL = URL(fileURLWithPath: path)
@@ -122,7 +122,7 @@ class AFWebviewVC: UIViewController, UIWebViewDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
-    func goBack() {
+    @objc func goBack() {
         aFWebview.goBack()
     }
     

@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 11-301V1 Aircrew Flight Equipment Program (25 Feb 2009).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 11-301V1 Aircrew Flight Equipment Program (10 Oct 2017).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

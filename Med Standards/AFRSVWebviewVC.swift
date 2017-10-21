@@ -33,7 +33,7 @@ class AFRSVWebviewVC: UIViewController, UIWebViewDelegate {
     }
     
     
-    func webViewLoad(){
+    @objc func webViewLoad(){
         if aF.selection == aF.rsvOverviewTitle {
             self.title = aF.rsvOverviewTitle
             aF.link += aF.rsvOverviewPDF
@@ -129,7 +129,7 @@ class AFRSVWebviewVC: UIViewController, UIWebViewDelegate {
         }
     }
     
-    func iBooksLaunch() {
+    @objc func iBooksLaunch() {
         print("button pressed")
         if let path = Bundle.main.path(forResource: aF.link, ofType: "pdf") {
             let targetURL = URL(fileURLWithPath: path)
@@ -169,7 +169,7 @@ class AFRSVWebviewVC: UIViewController, UIWebViewDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
-    func goBack() {
+    @objc func goBack() {
         aFWebview.goBack()
     }
     

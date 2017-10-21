@@ -60,7 +60,7 @@ class AFOxConvVC: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
         self.navigationItem.setRightBarButton(infoButton, animated: false)
     }
     
-    func segue() {
+    @objc func segue() {
         performSegue(withIdentifier: "OxConvAboutSegue", sender: nil)
     }
     

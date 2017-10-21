@@ -35,7 +35,7 @@ class NavyWebviewVC: UIViewController, UIWebViewDelegate {
         
     }
     
-    func webViewLoad(){
+    @objc func webViewLoad(){
         if navy.selection == navy.waiverGuideTitle {
             self.title = navy.waiverGuideTitle
             navy.link += navy.waiverGuidePDF
@@ -55,7 +55,7 @@ class NavyWebviewVC: UIViewController, UIWebViewDelegate {
 
     }
     
-    func iBooksLaunch() {
+    @objc func iBooksLaunch() {
         print("button pressed")
         
         if let path = Bundle.main.path(forResource: navy.link, ofType: "pdf") {
@@ -97,7 +97,7 @@ class NavyWebviewVC: UIViewController, UIWebViewDelegate {
         present(alertController, animated: true, completion: nil)
     }
 
-    func goBack() {
+    @objc func goBack() {
         navyWebview.goBack()
     }
         
