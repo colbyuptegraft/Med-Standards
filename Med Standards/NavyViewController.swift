@@ -13,8 +13,8 @@ struct navy {
     static var link:String = ""
     
     static let waiverGuideTitle = "Navy Waiver Guide"
-    static let waiverGuideDetail = "U.S. Navy Aeromedical Reference & Waiver Guide (19 Apr 2016)"
-    static let waiverGuidePDF = "Navy Aeromedical Reference & Waiver Guide (19 Apr 2016)"
+    static let waiverGuideDetail = "U.S. Navy Aeromedical Reference & Waiver Guide (15 Dec 2017)"
+    static let waiverGuidePDF = "Navy Aeromedical Reference & Waiver Guide (15 Dec 2017)"
 
     static let usnManmedTitle = "Navy ManMed Chapter 15"
     static let usnManmedDetail = "Physical Exams & Standards (3 Feb 2017)"

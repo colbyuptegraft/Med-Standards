@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 11-301V2 Management & Configuration Req for AFE (13 Jun 2017).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 11-301V2 Management & Configuration Req for AFE (6 Dec 2017).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

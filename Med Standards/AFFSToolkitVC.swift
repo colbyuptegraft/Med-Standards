@@ -10,8 +10,8 @@ import UIKit
 
 class AFFSToolkitVC: UITableViewController {
     
-    let aFDocArray:NSArray = [aF.oxConTitle, aF.nutSupTitle, aF.fsfogTitle, aF.fsqrTitle, aF.phsExMtxTitle, aF.pracGuidTitle, aF.rsvTitle, aF.sgpTitle, aF.metalsTitle, aF.specDescTitle]
-    let aFDocDetailArray:NSArray = [aF.oxConDetail, aF.nutSupDetail, aF.fsfogDetail, aF.fsqrDetail, aF.phsExMtxDetail, aF.pracGuidDetail, aF.rsvDetail, aF.sgpDetail, aF.metalsDetail, aF.specDescDetail]
+    let aFDocArray:NSArray = [aF.oxConTitle, aF.nutSupTitle, aF.flyPhaMtxTitle, aF.fsfogTitle, aF.fsqrTitle, aF.phsExMtxTitle, aF.pracGuidTitle, aF.rsvTitle, aF.sgpTitle, aF.metalsTitle, aF.specDescTitle]
+    let aFDocDetailArray:NSArray = [aF.oxConDetail, aF.nutSupDetail, aF.flyPhaMtxDetail, aF.fsfogDetail, aF.fsqrDetail, aF.phsExMtxDetail, aF.pracGuidDetail, aF.rsvDetail, aF.sgpDetail, aF.metalsDetail, aF.specDescDetail]
     
     
     override func viewDidLoad() {

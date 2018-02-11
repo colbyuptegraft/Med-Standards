@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/AF Waiver Guide (5 Oct 2017).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/AF Waiver Guide (4 Jan 2018).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

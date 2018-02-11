@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/AFI 48-123 Medical Examinations & Standards (19 Sep 2016).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/AFI 48-123 Medical Examinations & Standards (28 Jan 2018).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

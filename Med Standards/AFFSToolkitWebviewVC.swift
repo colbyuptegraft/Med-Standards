@@ -65,7 +65,13 @@ class AFFSToolkitWebviewVC: UIViewController, UIWebViewDelegate {
             let requestUrl = URL(string: url)
             let request = URLRequest(url: requestUrl!)
             aFWebview?.loadRequest(request)
-        } else if aF.selection == aF.fsfogTitle {
+        } else if aF.selection == aF.flyPhaMtxTitle {
+            self.title = aF.flyPhaMtxTitle
+            aF.link += aF.flyPhaMtxPDF
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFflyPhaMtx", withExtension: "html")
+            let request = URLRequest(url: path!)
+            aFWebview?.loadRequest(request)
+        }else if aF.selection == aF.fsfogTitle {
             self.title = aF.fsfogTitle
             aF.link += aF.fsfogPDF
             let path = Bundle.main.url(forResource: "pdfjs/web/AFfsfog", withExtension: "html")
