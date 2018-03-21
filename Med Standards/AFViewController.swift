@@ -43,6 +43,10 @@ struct aF {
     static let fsToolkitTitle = "Flight Surgeon Toolkit"
     static let fsToolkitDetail = "Useful Flight Medicine Resources"
     
+    static let physExMtxTitle = "Physical Examination Matrix"
+    static let physExMtxDetail = "Medical Standards & Medical Examination Requirements (Jan 2018)"
+    static let physExMtxPDF = "AF Physical Examination Matrix (Jan 2018)"
+    
     static let otherTitle = "Other AFIs"
     static let otherDetail = "Other Flight-Surgeon-Pertinent Air Force Instructions"
     
@@ -80,7 +84,7 @@ struct aF {
     static let afi11301v2Detail = "Management & Configuration Requirements for Aircrew Flight Equipment (AFE) (6 Dec 2017)"
     static let afi11301v2PDF = "AFI 11-301V2 Management & Configuration Req for AFE (6 Dec 2017)"
     
-    static let afi11301v4Title = "AFI 11-301 v4"
+    static let afi11301v4Title = "AFI 11-301 v4 (Rescinded)"
     static let afi11301v4Detail = "Aircrew Laser Eye Protection (ALEP) (17 Feb 2010)"
     static let afi11301v4PDF = "AFI 11-301V4 Aircrew Laser Eye Program (17 Feb 2010)"
     
@@ -290,8 +294,8 @@ struct aF {
 
 class AFViewController: UITableViewController {
     
-    let aFDocArray:NSArray = [aF.dlcTitle, aF.mesTitle, aF.medsTitle, aF.fsToolkitTitle, aF.otcMedsTitle, aF.modMedsTitle, aF.msdTitle, aF.wgTitle,  aF.otherTitle]
-    let aFDocDetailArray:NSArray = [aF.dlcDetail, aF.mesDetail, aF.medsDetail, aF.fsToolkitDetail, aF.otcMedsDetail, aF.modMedsDetail, aF.msdDetail, aF.wgDetail, aF.otherDetail]
+    let aFDocArray:NSArray = [aF.dlcTitle, aF.mesTitle, aF.medsTitle, aF.fsToolkitTitle, aF.otcMedsTitle, aF.modMedsTitle, aF.msdTitle, aF.physExMtxTitle, aF.wgTitle,  aF.otherTitle]
+    let aFDocDetailArray:NSArray = [aF.dlcDetail, aF.mesDetail, aF.medsDetail, aF.fsToolkitDetail, aF.otcMedsDetail, aF.modMedsDetail, aF.msdDetail, aF.physExMtxDetail, aF.wgDetail, aF.otherDetail]
 
     
     override func viewDidLoad() {

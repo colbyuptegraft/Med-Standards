@@ -70,7 +70,13 @@ class AFWebviewVC: UIViewController, UIWebViewDelegate {
             let path = Bundle.main.url(forResource: "pdfjs/web/AFMSDViewer", withExtension: "html")
             let request = URLRequest(url: path!)
             aFWebview?.loadRequest(request)
-        } else if aF.selection == aF.wgTitle {
+        } else if aF.selection == aF.physExMtxTitle {
+            self.title = aF.physExMtxTitle
+            aF.link += aF.physExMtxPDF
+            let path = Bundle.main.url(forResource: "pdfjs/web/AFphysExMtx", withExtension: "html")
+            let request = URLRequest(url: path!)
+            aFWebview?.loadRequest(request)
+        }else if aF.selection == aF.wgTitle {
             self.title = aF.wgTitle
             aF.link += aF.wgPDF
             let path = Bundle.main.url(forResource: "pdfjs/web/AFWaiverGuideViewer", withExtension: "html")
