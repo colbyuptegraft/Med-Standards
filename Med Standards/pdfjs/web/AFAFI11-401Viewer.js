@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 11-401 Aviation Management (1 Sep 2017).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AFI 11-401 Aviation Management (14 Feb 2018).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

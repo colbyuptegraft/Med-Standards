@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AF AETCI 48-103 Training Health & Human Performance Program (10 Dec 2014).pdf';
+var DEFAULT_URL = '../../PDFs_AirForce/Other_AFIs/AF AETCI 48-103 Training Health & Human Performance Program (24 Apr 2018).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

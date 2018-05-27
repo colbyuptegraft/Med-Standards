@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL = '../../PDFs_Navy/Navy Aeromedical Reference & Waiver Guide (15 Dec 2017).pdf';
+var DEFAULT_URL = '../../PDFs_Navy/Navy Aeromedical Reference & Waiver Guide (9 Apr 2018).pdf';
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;

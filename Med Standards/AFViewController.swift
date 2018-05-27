@@ -21,20 +21,20 @@ struct aF {
     static let mesPDF = "AFI 48-123 Medical Examinations & Standards (28 Jan 2018)"
     
     static let medsTitle = "Approved Med List"
-    static let medsDetail = "Official Air Force Aerospace Medicine Approved Medications (13 Jun 2017)"
-    static let medsPDF = "AF Approved Med List (13 Jun 2017)"
+    static let medsDetail = "Official Air Force Aerospace Medicine Approved Medications (24 May 2018)"
+    static let medsPDF = "AF Approved Med List (24 May 2018)"
     
     static let otcMedsTitle = "OTC Approved Med List"
     static let otcMedsDetail = "Over-the-Counter Medications Not Requiring Flight Surgeon Approval (09 Jan 2014)"
     static let otcMedsPDF = "AF OTC Approved Med List (09 Jan 2014)"
     
     static let modMedsTitle = "MOD Approved Med List"
-    static let modMedsDetail = "Approved Missile Operator Medications (11 Sep 2015)"
-    static let modMedsPDF = "AF Missile Operator Approved Med List (11 Sep 2015)"
+    static let modMedsDetail = "Approved Missile Operator Medications (24 May 2018)"
+    static let modMedsPDF = "AF Missile Operator Approved Med List (24 May 2018)"
     
     static let msdTitle = "MSD"
-    static let msdDetail = "Medical Standards Directory (29 May 2017)"
-    static let msdPDF = "AF Medical Standards Directory (29 May 2017)"
+    static let msdDetail = "Medical Standards Directory (24 May 2018)"
+    static let msdPDF = "AF Medical Standards Directory (24 May 2018)"
     
     static let wgTitle = "Waiver Guide"
     static let wgDetail = "Air Force Waiver Guide (4 Jan 2018)"
@@ -89,12 +89,12 @@ struct aF {
     static let afi11301v4PDF = "AFI 11-301V4 Aircrew Laser Eye Program (17 Feb 2010)"
     
     static let afi11401Title = "AFI 11-401"
-    static let afi11401Detail = "Aviation Management (1 Sep 2017)"
-    static let afi11401PDF = "AFI 11-401 Aviation Management (1 Sep 2017)"
+    static let afi11401Detail = "Aviation Management (14 Feb 2018)"
+    static let afi11401PDF = "AFI 11-401 Aviation Management (14 Feb 2018)"
     
     static let afi11402Title = "AFI 11-402"
-    static let afi11402Detail = "Aviation & Parachutist Service, Aeronautical Ratings & Aviation Badges (11 Sep 2017)"
-    static let afi11402PDF = "AFI 11-402 Aviation & Parachutist Service Aeronautical Ratings & Aviation Badges (11 Sep 2017)"
+    static let afi11402Detail = "Aviation & Parachutist Service, Aeronautical Ratings & Aviation Badges (28 Feb 2018)"
+    static let afi11402PDF = "AFI 11-402 Aviation & Parachutist Service Aeronautical Ratings & Aviation Badges (28 Feb 2018)"
     
     static let afi362101Title = "AFI 36-2101"
     static let afi362101Detail = "Classifying Military Personnel (9 Mar 2017)"
@@ -145,24 +145,24 @@ struct aF {
     static let afi48307v3PDF = "AFI 48-307v3 En Route Care Documentation (12 Apr 2016)"
     
     static let afi91202Title = "AFI 91-202"
-    static let afi91202Detail = "The US Air Force Mishap Prevention Program (25 May 2017)"
-    static let afi91202PDF = "AFI 91-202 USAF Mishap Prevention Program (25 May 2017).pdf"
+    static let afi91202Detail = "The US Air Force Mishap Prevention Program (21 May 2018)"
+    static let afi91202PDF = "AFI 91-202 USAF Mishap Prevention Program (21 May 2018).pdf"
     
     static let afi91204Title = "AFI 91-204"
-    static let afi91204Detail = "Safety Investigations & Reports (19 Jan 2018)"
-    static let afi91204PDF = "AFI 91-204 Safety Investigations & Reports (19 Jan 2018)"
+    static let afi91204Detail = "Safety Investigations & Reports (27 Apr 2018)"
+    static let afi91204PDF = "AFI 91-204 Safety Investigations & Reports (27 Apr 2018)"
     
     static let aetci48102Title = "AETCI 48-102"
     static let aetci48102Detail = "Medical Management of Undergraduate Flying Students (05 Nov 2013)"
     static let aetci48102PDF = "AF AETCI 48-102 Medical Management of UFT Students (05 Nov 2013)"
     
     static let aetci48103Title = "AETCI 48-103"
-    static let aetci48103Detail = "Training Health & Human Performance (10 Dec 2014)"
-    static let aetci48103PDF = "AF AETCI 48-103 Training Health & Human Performance Program (10 Dec 2014)"
+    static let aetci48103Detail = "Training Health & Human Performance (24 Apr 2018)"
+    static let aetci48103PDF = "AF AETCI 48-103 Training Health & Human Performance Program (24 Apr 2018)"
     
     static let afecdp1Title = "AFECD"
-    static let afecdp1Detail = "Air Force Enlisted Classification Directory (31 Oct 2017)"
-    static let afecdp1PDF = "AFECD (31 Oct 2017)"
+    static let afecdp1Detail = "Air Force Enlisted Classification Directory (30 Apr 2018)"
+    static let afecdp1PDF = "AFECD (30 Apr 2018)"
     
     static let afman48147Title = "AFMAN 48-147"
     static let afman48147Detail = "Tri-Service Food Code (30 Apr 2014)"
@@ -173,8 +173,8 @@ struct aF {
     static let afman91223PDF = "AFMAN 91-223 Aviation Safety Investigations & Reports (8 Jun 2016).pdf"
     
     static let afocdTitle = "AFOCD"
-    static let afocdDetail = "Air Force Officer Classification Directory (31 Oct 2017)"
-    static let afocdPDF = "AFOCD (31 Oct 2017)"
+    static let afocdDetail = "Air Force Officer Classification Directory (30 Apr 2018)"
+    static let afocdPDF = "AFOCD (30 Apr 2018)"
     
     static let afpam48133Title = "AFPAM 48-133 (Rescinded)"
     static let afpam48133Detail = "Physical Examination Techniques (1 Jun 2000)"
